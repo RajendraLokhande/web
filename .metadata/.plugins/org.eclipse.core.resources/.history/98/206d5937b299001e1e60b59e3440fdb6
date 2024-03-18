@@ -1,0 +1,87 @@
+package com.GroceryBillDemo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Products
+{
+	
+	Scanner sc=new Scanner(System.in);
+	ArrayList<Products> al=new ArrayList <>();
+
+	String DishSoap;
+	String Sugarbag;
+	
+	public Products(){
+		
+	}
+	
+	Products(String DishSoap, String Sugarbag)
+	{
+		DishSoap=DishSoap;
+		Sugarbag=Sugarbag;
+	}	
+
+
+public  void AddNewProducts() {
+	
+	Products p1=new Products();
+	Products p2=new Products();
+	
+	al.add(p1);
+	al.add(p2);
+	
+	System.out.println(al);
+}
+	
+
+public void displayBill() {
+	
+	for(int i=0; i<al.size();i++)
+	{
+      System.out.println("Dish Soap: "+al.get(i).DishSoap);
+      System.out.println("Sugarbag: "+al.get(i).Sugarbag);
+		
+	}
+	System.out.println("Total no. of Products: "+al.size());
+}
+
+
+public class GroceryBill {
+
+
+	public static void main(String[] args) {
+
+	Products prd=new Products ();
+	Scanner sc=new Scanner(System.in);
+	
+	  prd.AddNewProducts();
+		
+	while(true) 
+	
+	{
+		System.out.println("press 1 for add new products");
+		System.out.println("press 2 for display bill");
+		
+		System.out.println("Enter the options");
+		int options=sc.nextInt();
+	
+
+	
+	switch (options)
+	
+	 {
+	 case 1: prd.AddNewProducts();
+	      break;
+	 case 2: prd.displayBill();
+	       break;
+	  default : System.out.println ("invalid products");     
+	       
+	 }      
+      System.out.println("------------------------------");
+	}
+   }
+  }
+ }
+
+

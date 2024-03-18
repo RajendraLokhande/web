@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<person>
+      <id>101</id>
+      <name>Jhon</name>
+      <age>25</age>
+      <phno>124578698</phno>
+      <adress>
+          <city>Hyd</city>   
+          <state>TG</state>
+          <country></country>
+      </adress>
+</person>

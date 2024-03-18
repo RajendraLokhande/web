@@ -1,0 +1,5 @@
+package in.ashokit.security;
+
+public class PwdSecurityService {
+
+}

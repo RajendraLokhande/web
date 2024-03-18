@@ -1,0 +1,18 @@
+package in.ashokit.rest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CourceRestController {
+	
+	
+	public String getCourceFee(String cname, String tname) {
+		
+		String respBody = cname+ "By"+ tname + "Fee is 7000 INR";
+		
+		return respBody;
+		
+	}
+
+}

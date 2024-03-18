@@ -1,0 +1,15 @@
+package com.springcore.collections;
+
+public class Test {
+
+	public static <ApplicationContext> void main(String[] args) {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("in/spring_core/config.xml");
+		System.out.println(emp1.getName());
+		System.out.println(emp1.getPhones());
+		System.out.println(emp1.getAddresses());
+		System.out.println(emp1.getCourses());
+
+	}
+
+}

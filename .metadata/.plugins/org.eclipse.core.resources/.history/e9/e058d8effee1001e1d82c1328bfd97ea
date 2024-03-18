@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 43-SBMS-Admin-Server

@@ -1,0 +1,23 @@
+package com.ashokit.binding;
+
+import java.xml.bind.annotation.XmlRootElement;
+//import lombok.AllArgsConstructor;
+import lombok.Data;
+//import lombok.NoArgsConstructor;
+
+@Data
+@XmlRootElement
+//@AllArgsConstructor
+//@NoArgsConstructor
+public class Product {
+
+	private Integer pid;
+	
+	private String pname;
+	
+	private Double price;
+	
+	
+	
+	
+}

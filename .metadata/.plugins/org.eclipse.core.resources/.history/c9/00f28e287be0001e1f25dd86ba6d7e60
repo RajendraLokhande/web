@@ -1,0 +1,5 @@
+package in.ashokit.service.impl;
+
+public class BookServiceImpl {
+
+}

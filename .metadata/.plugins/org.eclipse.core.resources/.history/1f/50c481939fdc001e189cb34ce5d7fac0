@@ -1,0 +1,36 @@
+package in.ashokit.rest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokit.binding.Passanger;
+import in.ashokit.binding.Ticket;
+
+@RestController
+public class TicketController {
+	
+	@GetMapping
+	public ResponseEntity<Ticket> addPassanger(@RequestBody String Passanger){
+		
+		System.out.println();
+		
+		Ticket t = new Ticket();
+		t.setName(110);
+		t.setPname("Ramu");
+		t.setTrainno((long) 3102460);
+		t.setType("sleeper");
+		t.setTime("11.00 am");
+		
+		return new ResponseEntity<Ticket>(pass, HttpStatus.CREATED);
+		
+		
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,24 @@
+package com.Demo;
+
+public class CalcIntegerDigits {
+
+	public static void main(String[] args) 
+	
+	{
+
+		int no=5673;
+		
+		int leng=0;
+	    while (no!=0);
+		
+		
+		{
+			leng= leng+1;
+			no=no/10;
+			
+		}
+		System.out.println("Length of "+no+" is "+leng);
+		
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Variable&apos;&#x0D;&#x0A;- Original project: &apos;Variable&apos;&#x0D;&#x0A;- Original element: &apos;com.variable.StaticVariable.java&apos;" description="Delete element" element1="/src&lt;com.variable{StaticVariable.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1703201220268" subPackages="false" version="1.0"/>
+</session>

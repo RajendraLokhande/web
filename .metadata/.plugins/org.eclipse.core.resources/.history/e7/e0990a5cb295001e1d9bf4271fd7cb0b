@@ -1,0 +1,17 @@
+package com.Exception;
+
+public class ExceptionDemo1 {
+
+	public static void main(String[] args) {
+	System.out.println("Started...");
+	int n1=0;
+	int n2=2;
+	System.out.println("we have got two numbers..");
+	int result = n1%n2;
+	System.out.println("Division is result");
+		
+		
+
+	}
+
+}

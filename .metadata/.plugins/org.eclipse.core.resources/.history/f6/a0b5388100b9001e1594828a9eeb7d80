@@ -1,0 +1,22 @@
+package com.springboot.controller;
+
+import java.awt.print.Book;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ProductController {
+	
+	@GetMapping("/")
+	public String getProductForm(Model model ) {
+		Book bookObj = new Book();
+		model.addAttribute("book", bookObj);
+		return "index";
+
+	
+	}
+	
+	
+}

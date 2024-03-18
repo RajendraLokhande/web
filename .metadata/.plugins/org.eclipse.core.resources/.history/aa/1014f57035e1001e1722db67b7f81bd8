@@ -1,0 +1,28 @@
+package in.ashokit.client;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+
+@Service
+public class BookClient {
+	
+	
+	
+	public void invokeGetBooks() {
+		
+		String apiUrl = "https://ashokit-book-app.herokuapp.com/books";
+		WebClient client = WebClient.create();
+		client.get()
+		      .uri(apiUrl)
+		      .retrieve()
+		      .bodyToMono(String.class)
+		      .block();
+		      
+		      
+		
+		
+		
+		
+	}
+
+}

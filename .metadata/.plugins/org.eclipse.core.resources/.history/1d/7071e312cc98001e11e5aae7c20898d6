@@ -1,0 +1,144 @@
+package com.Banking;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+ class Accounts
+{
+	String Accono;
+	String AccoHolName;
+	int accountBalance;
+	ArrayList<Accounts> a1;
+	
+	
+	Accounts()
+	{
+				
+	}
+	
+	
+
+	Accounts(String Accno, String AccoHolName, int AccountBanlance)
+	{
+		this.Accono=Accono;
+		this.AccoHolName=AccoHolName;
+		this.accountBalance=accountBalance;
+		
+	}
+	
+	
+	
+	
+	public List<Accounts> createAccount(){
+		
+		
+		a1.add(new Accounts("12345678","abc",123));
+		a1.add(new Accounts("112223","xyz",102000));
+		a1.add(new Accounts("6659885","sabc",12356));
+		a1.add(new Accounts("55112223","dadf",102000));
+		a1.add(new Accounts("6464","abc",12345666));
+		a1.add(new Accounts("11256223","xydsz",102000));
+		
+		
+		return a1;
+		
+		
+		
+	}
+	public List<Accounts> createAccount(String Accno, String AccoHolName, int AccountBanlance){
+		
+		List<Accounts> user= new ArrayList<>();
+		
+		user.add(new Accounts(Accno, AccoHolName, AccountBanlance));
+		
+		return user;
+		
+		
+	}
+
+}
+
+
+/*
+ * public class Accounts{
+ * 
+ * 
+ * Scanner sc=new Scanner(System.in); ArrayList<Accounts> al=new ArrayList<>();
+ * al.(Accono)();
+ * 
+ * String Accono; String AccoHolName; int accountBalance;
+ * 
+ * Accounts(String Accno, String AccoHolName, int AccountBanlance) {
+ * this.Accono=Accono; this.AccoHolName=AccoHolName;
+ * this.accountBalance=accountBalance;
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ * void dispalyAccountDetails() {
+ * 
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * System.out.println("Accounts Number: "+"accono");
+ * 
+ * } }
+ */
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc= new Scanner(System.in);
+		
+		
+		
+		Accounts accounts = new Accounts();
+		
+		int n=  sc.nextInt();
+		
+		
+		switch(n) {
+		
+		case 1: System.out.println("create New Account");
+				accounts.createAccount(sc.nextLine(), sc.nextLine(), sc.nextInt());
+				break;
+		
+		}
+		
+		//case:1
+		
+		
+		
+		
+		/*case1:System.out.println("1 New Account");
+	      break;
+	case2:System.out.println("2 Credit to Account");
+	      break;
+	case3:System.out.println("3 Debit from Account");
+        break;
+  case4:System.out.println("4 Fund transfer from Account");
+	      break;
+	case5:System.out.println("5 Display Account Balance ");
+	      break;
+	case6:System.out.println("6 Display AllAccount");
+	      break;
+	case7:System.out.println("7 Exit");
+	      break;
+		*/
+		
+	
+	}
+
+}

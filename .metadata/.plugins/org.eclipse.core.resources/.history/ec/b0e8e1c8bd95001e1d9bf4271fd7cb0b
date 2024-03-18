@@ -1,0 +1,30 @@
+package com.Exception;
+
+
+	
+class Tommy xetends Human
+{
+	
+	
+	
+}
+class	
+{
+	
+	
+	
+	
+
+}
+public class AgeInvalidException {
+	
+	public static void main(String[] args) {
+  System.out.println("Started...");
+  {	
+		
+	
+		
+  }
+  }
+	
+}
